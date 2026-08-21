@@ -1,6 +1,6 @@
 class Solution {
     public boolean isMonotonic(int[] nums) {
-        if(nums.length==1){
+        if(nums.length<=2){
             return true;
         }
         boolean increasing=true;
@@ -9,7 +9,7 @@ class Solution {
             if(nums[i]<nums[i+1]){
                 decreasing=false;
             }
-            if(nums[i]>nums[i+1]){
+            else if(nums[i]>nums[i+1]){
                 increasing=false;
             }
         }
