@@ -1,8 +1,8 @@
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
         HashSet<Character> set=new HashSet<>();
-        for(int i=0;i<jewels.length();i++){
-            set.add(jewels.charAt(i));
+        for(char ch:jewels.toCharArray()){
+            set.add(ch);
         }
         int count=0;
         for(int i=0;i<stones.length();i++){
